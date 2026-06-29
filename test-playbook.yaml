@@ -15,3 +15,7 @@
     - name: debug red hat OS version
       ansible.builtin.debug:
         msg: "Red Hat OS version on {{ inventory_hostname }}: {{ ansible_distribution_version }}"
+
+    - name: pring my favorite pet
+      ansible.builtin.debug:
+        msg: "My favorite pet is a {{ pet_name }}."
