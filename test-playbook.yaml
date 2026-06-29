@@ -11,3 +11,7 @@
     - name: Show ping result
       ansible.builtin.debug:
         msg: "Ping response from {{ inventory_hostname }}: {{ ping_result.ping }}"
+
+    - name: debug red hat OS version
+      ansible.builtin.debug:
+        msg: "Red Hat OS version on {{ inventory_hostname }}: {{ ansible_distribution_version }}"
